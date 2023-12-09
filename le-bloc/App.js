@@ -4,6 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import * as SplashScreen from 'expo-splash-screen';
 import { useFonts, Roboto_400Regular, Roboto_500Medium, Roboto_700Bold} from '@expo-google-fonts/roboto';
 import {FONTS} from './src/styles';
+import { LoginScreen } from './src/screens';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -26,8 +27,7 @@ export default function App() {
 
   return (
     <View style={styles.container} onLayout={onLayoutRootView}>
-      <Text style={FONTS.h3_Bold}>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <LoginScreen/>
     </View>
   );
 }
