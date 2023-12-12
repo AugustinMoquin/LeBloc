@@ -8,8 +8,6 @@ const styles= StyleSheet.create({
     }
 })
 
-}
-
 export default function LoginBanner() {
   return (
     <View>
